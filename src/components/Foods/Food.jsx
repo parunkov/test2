@@ -29,7 +29,7 @@ const Food = ({id, title, portions, mouses, like, weight, text, selected, disabl
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}>
 					{!disabled && selected && hovered ?
-						<div className="Food__description">Котэ не одобряет?</div> :
+						<div className="Food__description Food__description_hovered">Котэ не одобряет?</div> :
 						<div className="Food__description">Сказочное заморское яство</div>}
 					<h2 className="Food__title">Нямушка</h2>
 					<div className="Food__subtitle">{title}</div>

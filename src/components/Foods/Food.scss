@@ -1,7 +1,13 @@
+@import "../../variables.scss";
 .Food {
 	&__card {
 		cursor: pointer;
-		border: 2px solid green;
+		width: 320px;
+		min-height: 480px;
+		border: 4px solid $blue;
+		// background-color: $lightGray;
+		// background-image: url('./images/Photo.webp');
+		background: $lightGray url('./images/Photo.webp') left bottom no-repeat;
 		&_selected {
 			border: 2px solid red;
 		}
@@ -13,5 +19,10 @@
 	&__textLink {
 		color: blue;
 		cursor: pointer;
+	}
+	&__description {
+		&_hovered {
+			color: red;
+		}
 	}
 }
