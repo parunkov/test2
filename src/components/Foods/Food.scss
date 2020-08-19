@@ -1,19 +1,19 @@
 @import "../../variables.scss";
 .Food {
+	flex: 0 0 320px;
+	width: 320px;
 	&__card {
 		cursor: pointer;
 		width: 320px;
 		min-height: 480px;
 		border: 4px solid $blue;
-		// background-color: $lightGray;
-		// background-image: url('./images/Photo.webp');
 		background: $lightGray url('./images/Photo.webp') left bottom no-repeat;
 		&_selected {
-			border: 2px solid red;
+			border: 4px solid $red;
 		}
 		&_disabled {
 			cursor: default;
-			border: 2px solid gray;
+			border: 4px solid $gray;
 		}
 	}
 	&__textLink {

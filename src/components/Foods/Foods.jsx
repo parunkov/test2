@@ -1,5 +1,6 @@
 import React from 'react';
 import Food from './Food';
+import './Foods.scss';
 
 const Foods = (props) => {
 	// console.log(props);
@@ -17,7 +18,7 @@ const Foods = (props) => {
 			toggleSelected={props.toggleSelected}/>);
 
 	return (
-		<div className="">
+		<div className="Foods">
 			{foodsElements}
 		</div>
 	)
