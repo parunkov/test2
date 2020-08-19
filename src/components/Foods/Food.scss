@@ -1,14 +1,17 @@
 .Food {
 	&__card {
+		cursor: pointer;
 		border: 2px solid green;
 		&_selected {
 			border: 2px solid red;
 		}
 		&_disabled {
+			cursor: default;
 			border: 2px solid gray;
 		}
 	}
 	&__textLink {
 		color: blue;
+		cursor: pointer;
 	}
 }

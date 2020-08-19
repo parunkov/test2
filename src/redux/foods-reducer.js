@@ -45,7 +45,6 @@ const initialState = {
 const foodsReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case CHANGE_SELECTED: {
-			// console.log(action.selected);
 			return {
 				...state,
 				data: updateObjectInArray(state.data, action.id, 'id', {selected: !action.selected})
