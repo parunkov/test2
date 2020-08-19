@@ -22,7 +22,10 @@ const Food = ({id, title, portions, mouses, like, weight, text, selected, disabl
 				disabled ? " Food__card_disabled" :
 					selected ? " Food__card_selected" : ""
 				)} 
-				onClick={() => toggleSelected(id, selected)}
+				onClick={() => {
+					toggleSelected(id, selected);
+					setHovered(false);
+				}}
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}>
 					{!disabled && selected && hovered ?
