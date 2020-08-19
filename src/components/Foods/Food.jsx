@@ -1,6 +1,7 @@
 import React from 'react';
 import './Food.scss';
 import { formatNumber } from 'accounting';
+// import cn from 'classnames';
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
@@ -11,10 +12,18 @@ const num2str = function (num, textForms) {
   return textForms[2];
 };
 
-const Food = ({title, portions, mouses, like, weight, text}) => {
+const Food = ({id, title, portions, mouses, like, weight, text, selected, disabled, toggleSelected}) => {
+	// console.log(toggleSelected);
 	return (
 		<div className="Food">
-			<div className="Food__card">
+			<div className={"Food__card" + (
+				disabled ? " Food__card_disabled" :
+					selected ? " Food__card_selected" : ""
+				)} onClick={() => {
+					// console.log(selected);
+					// const a = !selected;
+					toggleSelected(id, selected);
+				}}>
 				<div className="Food__description">Сказочное заморское яство</div>
 				<h2 className="Food__title">Нямушка</h2>
 				<div className="Food__subtitle">{title}</div>
@@ -27,7 +36,12 @@ const Food = ({title, portions, mouses, like, weight, text}) => {
 				</div>
 
 			</div>
-			<div className="Food__text">{text}</div>
+			{disabled ?
+				<div className="Food__text">Печалька, {title} закончился.</div> :
+				selected ?
+					<div className="Food__text">{text}</div> :
+					<div className="Food__text">Чего сидишь? Порадуй котэ, <span className="Food__textLink">купи.</span></div>
+			}
 		</div>
 	)
 }

@@ -1,3 +1,14 @@
-.Food__card {
-	border: 1px solid green;
+.Food {
+	&__card {
+		border: 2px solid green;
+		&_selected {
+			border: 2px solid red;
+		}
+		&_disabled {
+			border: 2px solid gray;
+		}
+	}
+	&__textLink {
+		color: blue;
+	}
 }
