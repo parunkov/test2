@@ -1,5 +1,6 @@
 import React from 'react';
 import './Food.scss';
+import { formatNumber } from 'accounting';
 
 const num2str = function (num, textForms) {
   const n = Math.abs(num) % 100;
@@ -20,7 +21,11 @@ const Food = ({title, portions, mouses, like, weight, text}) => {
 				<div className="Food__portions">{portions} {num2str(portions, ['порция', 'порции', 'порций'])}</div>
 				<div className="Food__mouses">{mouses} {num2str(mouses, ['мышь', 'мыши', 'мышей'])} в подарок</div>
 				{like && <div className="Food__like">заказчик доволен</div>}
-				<div className="Food__weight">{weight} кг</div>
+				<div className="Food__weightWrapper">
+					<div className="Food__weight">{!(weight - Math.trunc(weight)) ? weight : formatNumber(weight, 1, '',',')}</div>
+					<div className="Food__weightUnit">кг</div>
+				</div>
+
 			</div>
 			<div className="Food__text">{text}</div>
 		</div>
