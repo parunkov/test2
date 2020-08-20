@@ -6,7 +6,7 @@
 
 https://parunkov.github.io/test2/
 
-## ОТветы на вопросы
+## Ответы на вопросы
 
 https://github.com/parunkov/test2/blob/master/questions/questions.txt
 
