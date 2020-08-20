@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/test2/static/css/main.a264679a.chunk.css",
+    "main.js": "/test2/static/js/main.6ebce957.chunk.js",
+    "main.js.map": "/test2/static/js/main.6ebce957.chunk.js.map",
+    "runtime-main.js": "/test2/static/js/runtime-main.70875b4d.js",
+    "runtime-main.js.map": "/test2/static/js/runtime-main.70875b4d.js.map",
+    "static/js/2.458ba85d.chunk.js": "/test2/static/js/2.458ba85d.chunk.js",
+    "static/js/2.458ba85d.chunk.js.map": "/test2/static/js/2.458ba85d.chunk.js.map",
+    "index.html": "/test2/index.html",
+    "precache-manifest.22a21a32cffc20bb589c52c7bf9efb96.js": "/test2/precache-manifest.22a21a32cffc20bb589c52c7bf9efb96.js",
+    "service-worker.js": "/test2/service-worker.js",
+    "static/css/main.a264679a.chunk.css.map": "/test2/static/css/main.a264679a.chunk.css.map",
+    "static/js/2.458ba85d.chunk.js.LICENSE.txt": "/test2/static/js/2.458ba85d.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/test2/static/media/Exo2.0-Thin.44bde874.otf",
+    "static/media/App.scss": "/test2/static/media/Pattern.24f7dfdc.png",
+    "static/media/Food.scss": "/test2/static/media/Photo_opacity.581a9c18.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70875b4d.js",
+    "static/js/2.458ba85d.chunk.js",
+    "static/css/main.a264679a.chunk.css",
+    "static/js/main.6ebce957.chunk.js"
+  ]
+}
