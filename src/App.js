@@ -9,7 +9,8 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <div className="App__container">
-          <FoodsContainer />
+        	<h1 className="App__title">Ты сегодня покормил кота?</h1>
+          	<FoodsContainer />
         </div>
       </div>
     </Provider>

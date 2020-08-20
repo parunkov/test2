@@ -1,10 +1,21 @@
+@import "variables.scss";
 .App {
-
+background: $black;
 	&__container {
-		padding-top: 47px;
+		padding-top: 36px;
 		max-width: 1120px;
 		margin: 0 auto;
+		text-align: center;
 
+	}
+	&__title {
+		text-shadow: 0 1px 0 $black;
+		color: $white;
+		font-family: "Exo 2.0- Thin";
+		font-size: 36px;
+		font-weight: 400;
+		margin-top: 0;
+		margin-bottom: 25px;
 	}
 }
 

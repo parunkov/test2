@@ -1,5 +1,8 @@
 .Foods {
 	display: flex;
 	flex-flow: row wrap;
-	justify-content: space-around;
+	justify-content: space-between;
+	@media (max-width: 1000px) {
+		justify-content: space-around;
+	}
 }
