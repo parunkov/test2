@@ -1,8 +1,9 @@
 .Foods {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	@media (max-width: 1000px) {
-		justify-content: space-around;
-	}
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  @media (max-width: 1000px) {
+    justify-content: space-around;
+  }
 }
