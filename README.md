@@ -6,6 +6,10 @@
 
 https://parunkov.github.io/test2/
 
+## ОТветы на вопросы
+
+https://github.com/parunkov/test2/blob/master/questions/questions.txt
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
