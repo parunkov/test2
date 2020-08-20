@@ -1,6 +1,8 @@
 @import "variables.scss";
 .App {
-background: $black;
+	position: relative;
+	background: $black;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.5) 100%), url('./images/Pattern.png');
 	&__container {
 		padding-top: 36px;
 		max-width: 1120px;

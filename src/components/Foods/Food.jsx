@@ -45,7 +45,7 @@ const Food = ({id, title, portions, mouses, like, weight, text, selected, disabl
 
 			</div>
 			{disabled ?
-				<div className="Food__text">Печалька, {title} закончился.</div> :
+				<div className={"Food__text" + (disabled && " Food__text_disabled")}>Печалька, {title} закончился.</div> :
 				selected ?
 					<div className="Food__text">{text}</div> :
 					<div className="Food__text">Чего сидишь? Порадуй котэ, <span className="Food__textLink" onClick={() => toggleSelected(id, selected)}>купи.</span></div>
