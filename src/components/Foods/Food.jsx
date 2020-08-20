@@ -28,14 +28,16 @@ const Food = ({id, title, portions, mouses, like, weight, text, selected, disabl
 				}}
 				onMouseEnter={() => setHovered(true)}
 				onMouseLeave={() => setHovered(false)}>
-					{!disabled && selected && hovered ?
-						<div className="Food__description Food__description_hovered">Котэ не одобряет?</div> :
-						<div className="Food__description">Сказочное заморское яство</div>}
-					<h2 className="Food__title">Нямушка</h2>
-					<div className="Food__subtitle">{title}</div>
-					<div className="Food__portions">{portions} {num2str(portions, ['порция', 'порции', 'порций'])}</div>
-					<div className="Food__mouses">{mouses} {num2str(mouses, ['мышь', 'мыши', 'мышей'])} в подарок</div>
-					{like && <div className="Food__like">заказчик доволен</div>}
+					<div className="Food__descriptionWrapper">
+						{!disabled && selected && hovered ?
+							<div className="Food__description Food__description_hovered">Котэ не одобряет?</div> :
+							<div className="Food__description">Сказочное заморское яство</div>}
+						<h2 className="Food__title">Нямушка</h2>
+						<div className="Food__subtitle">{title}</div>
+						<div className="Food__portions">{portions} {num2str(portions, ['порция', 'порции', 'порций'])}</div>
+						<div className="Food__mouses">{mouses > 1 && mouses} {num2str(mouses, ['мышь', 'мыши', 'мышей'])} в подарок</div>
+						{like && <div className="Food__like">заказчик доволен</div>}
+					</div>
 					<div className="Food__weightWrapper">
 						<div className="Food__weight">{!(weight - Math.trunc(weight)) ? weight : formatNumber(weight, 1, '',',')}</div>
 						<div className="Food__weightUnit">кг</div>
